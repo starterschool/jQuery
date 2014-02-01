@@ -5,41 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="/css/screen.css" media="all">
-<script src="/js/jquery.js" type="text/javascript"></script>
+<script src="/js/jquery.min.js" type="text/javascript"></script>
+<script src="/js/global.js" type="text/javascript"></script>
 </head>
 <body>
-<form>
+<form class="madlibs-form">
     <fieldset>
         <legend>Fill in the blanks</legend>
         <div>
-            <label>Noun</label> <input type="text">
+            <label>Noun</label>
+            <input type="text" title="Nouns are people, places and things" data-blank="noun">
         </div>
         <div>
-            <label>Plural noun</label> <input type="text">
+            <label>Plural noun</label>
+            <input type="text" title="More than one of the above." data-blank="plural-noun">
         </div>
         <div>
-            <label>Verb</label> <input type="text">
+            <label>Verb</label> <input type="text" data-blank="verb">
         </div>
         <div>
-            <label>Adjective</label> <input type="text">
+            <label>Adjective</label> <input type="text" data-blank="adjective">
         </div>
         <div>
-            <label>Currency</label> <input type="text">
+            <label>Currency</label> <input type="text" data-blank="currency">
         </div>
         <div>
-            <label>Woman's name</label> <input type="text">
+            <label>Woman's name</label> <input type="text" data-blank="womans-name">
         </div>
         <div>
-            <label>Street name</label> <input type="text">
+            <label>Street name</label> <input type="text"data-blank="street">
         </div>
         <div>
-            <label>Country</label> <input type="text">
+            <label>Country</label> <input type="text" data-blank="country">
         </div>
         <div>
-            <label>Broadway musical</label> <input type="text">
+            <label>Broadway musical</label> <input type="text" data-blank="musical">
         </div>
         <div>
-            <label>Two-digit number</label> <input type="text">
+            <label>Two-digit number</label> <input type="text" data-blank="number">
         </div>
     </fieldset>
     <div class="story">
@@ -58,7 +61,7 @@
         <span class="blank number"></span>
         <span class="blank currency"></span>.
         Fortunately, bartering is legal in
-        <span class="blank state"></span>,
+        <span class="blank country"></span>,
         so I traded in all my
         <span class="blank plural-noun"></span>,
         and took it home with me.

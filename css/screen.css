@@ -80,13 +80,17 @@ fieldset {
   margin-bottom: 1em;
   padding: 10px 14px;
 }
+fieldset.active {
+  background: cyan;
+}
 
 legend {
   padding: 0 .5em;
   font-weight: bold;
 }
 
-input {
+input[type=text] {
+  font-family: Helvetica;
   border: 1px solid #ccc;
   background: none;
   border-width: 0 0 1px;
@@ -95,6 +99,9 @@ input {
   width: 75%;
   outline: none;
 }
+input[type=text].active {
+  border: 1px solid blue;
+}
 
 label {
   font-size: 12px;
@@ -102,6 +109,9 @@ label {
   padding-top: 6px;
   width: 22%;
   display: inline-block;
+}
+label.active {
+  font-weight: bold;
 }
 
 p {
@@ -116,6 +126,10 @@ b {
   padding: 0 40px;
   border-bottom: 1px solid #999;
   margin: 0 2px;
+}
+.blank.filled {
+  color: blue;
+  padding: 0 14px;
 }
 
 .story {
