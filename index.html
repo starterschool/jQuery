@@ -12,19 +12,30 @@
 <body>
 
 <div class="wrap">
-    <h1>Sign up</h1>
+    <h1><a href="/">Sign up</a></h1>
     <form>
         <fieldset class="form-group">
             <label for="name">Name</label>
-            <input id="name" type="text" class="form-control">
+            <input id="name" type="text" name="name" class="form-control">
         </fieldset>
         <fieldset class="form-group">
             <label for="email">Email</label>
-            <input id="email" type="email" class="form-control">
+            <input id="email" type="email" name="email" class="form-control">
         </fieldset>
         <fieldset class="form-group">
             <label for="username">Username</label>
-            <input id="username" type="text" class="form-control">
+            <input id="username" type="text" name="username" class="form-control">
+        </fieldset>
+        <fieldset class="form-group">
+            <label>Gender</label><br>
+            <label>
+                <input id="username" type="radio" name="Gender" value="♂">
+                Male
+            </label>
+            <label>
+                <input id="username" type="radio" name="Gender" value="♀">
+                Female
+            </label>
         </fieldset>
         <button type="submit" class="btn btn-default">Submit</button>
     </form>
@@ -35,6 +46,7 @@
         <li>When the submit button is clicked, any empty input fields should gain a red border.</li>
         <li>When a user clicks off of an empty input field, it should gain a red border.</li>
         <li>When a user enters text in an empty field with the red border, the red border should disappear (when field loses focus).</li>
+        <li>When submitting a successful form, post it to tsljs.herokuapp.com/YOURNAME. If it works, post alert (use classes "alert" and "alert-success") on the page, saying it worked.</li>
     </ol>
     <hr>
     <h4>Part 2</h4>
